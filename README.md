@@ -38,3 +38,4 @@ python main.py
 
 - `BOT_TOKEN` - токен Telegram бота
 - `PORT` - порт для Heroku (автоматически)
+
