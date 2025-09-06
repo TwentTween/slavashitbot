@@ -5,7 +5,9 @@ import json
 import logging
 from datetime import datetime
 
-TOKEN = os.getenv('BOT_TOKEN', '8050651893:AAGdnmNnkXmwSdI1xTr8fnhCx2fluIPlKPk')
+TOKEN = os.getenv('BOT_TOKEN')
+if not TOKEN:
+    raise ValueError("BOT_TOKEN environment variable is required!")
 
 # Админские ID (добавьте свои ID сюда)
 ADMIN_IDS = [1249391970]  # Rick Morrison (@rhhiko)
